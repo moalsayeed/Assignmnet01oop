@@ -43,6 +43,23 @@ namespace Assignmnet01oop.NewFolder
         }
         #endregion
 
+        #region q4
+        //Create an enum called "Colors" with the basic colors(Red, Green, Blue) as its members.
+        //Write a C# program that takes a color name as input from the user and
+        //displays a message indicating whether the input color is a primary color or not.
+            
+        public enum Colors
+        {
+            Red,
+            Green,
+            Blue
+        }
+
+
+        #endregion
+
+
+
 
     }
 }

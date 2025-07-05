@@ -8,7 +8,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-      
+
         #region q1
         //Create an enum called "WeekDays" with the days of the week (Monday to Sunday) as its members. Then,
         //write a C# program that prints out all the days of the week using this enum.
@@ -39,23 +39,23 @@ internal class Program
         //the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
 
 
-            Console.WriteLine("Enter a season (Spring, Summer, Autumn, Winter): ");
-            string input = Console.ReadLine()!;
+        //     Console.WriteLine("Enter a season (Spring, Summer, Autumn, Winter): ");
+        //     string input = Console.ReadLine()!;
 
-  
-        Season season;
-            bool isValidSeason = Enum.TryParse(input, true, out season);
-       
 
-       string Renge= getRenge(season);
-            if (isValidSeason)
-            {
-                Console.WriteLine($"The range for {season} is: {Renge}");
-            }
-            else
-            {
-                Console.WriteLine("Invalid season entered.");
-        }
+        // Season season;
+        //     bool isValidSeason = Enum.TryParse(input, true, out season);
+
+
+        //string Renge= getRenge(season);
+        //     if (isValidSeason)
+        //     {
+        //         Console.WriteLine($"The range for {season} is: {Renge}");
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Invalid season entered.");
+        // }
 
 
 
@@ -64,6 +64,37 @@ internal class Program
         #endregion
 
 
+        #region q4
+        //.Write a C# program that takes a color name as input from the user and displays
+        //a message indicating whether the input color is a primary color or not.
+
+        Console.WriteLine("Enter a color (Red, Green, Blue): ");
+
+        string colorInput = Console.ReadLine()!;
+
+        
+        Colors color;
+        bool isValidColor = Enum.TryParse(colorInput, true, out color);
+        if (isValidColor) {
+            switch (color)
+            {
+                case Colors.Red:
+                case Colors.Green:
+                case Colors.Blue:
+                    Console.WriteLine($"{color} is a primary color.");
+                    break;
+                default:
+                    Console.WriteLine($"{color} is not a primary color.");
+                    break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid color entered.");
+        }
+
+
+        #endregion
     }
 
     static string getRenge(Season season)
