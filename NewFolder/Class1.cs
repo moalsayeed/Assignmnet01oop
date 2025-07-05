@@ -29,6 +29,19 @@ namespace Assignmnet01oop.NewFolder
             }
         }
 
+        #region q3
+        //  Create an enum called "Seas on" with the four seasons (Spring, Summer, Autumn, Winter) as its members.
+        //  Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season.
+        //  Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
+
+        public enum Season
+        {
+            Spring,
+            Summer,
+            Autumn,
+            Winter
+        }
+        #endregion
 
 
     }
