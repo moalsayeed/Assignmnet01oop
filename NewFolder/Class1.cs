@@ -1,4 +1,8 @@
 ﻿
+using System.ComponentModel;
+using System.Drawing;
+using static Assignmnet01oop.NewFolder.Class1;
+
 namespace Assignmnet01oop.NewFolder
 {
     public class Class1
@@ -54,6 +58,38 @@ namespace Assignmnet01oop.NewFolder
             Green,
             Blue
         }
+
+
+        #endregion
+
+        #region q5
+
+        //Create a struct called "Point" to represent a 2D point with properties "X" and "Y". Write a C# program that takes two points as input from the user and calculates the distance between them.
+
+
+
+
+
+        public struct Point
+        {
+            public double X { get; set; }
+            public double Y { get; set; }
+            public Point(double x, double y)
+            {
+                X = x;
+                Y = y;
+            }
+      
+        }
+
+        #endregion
+
+        #region q6
+
+        //Create a struct called "Person" with properties "Name" and "Age".
+        //Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
+
+
 
 
         #endregion
